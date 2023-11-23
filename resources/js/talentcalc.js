@@ -123,7 +123,7 @@ window.addEventListener('contextmenu', (ev) => {
         for (i=0;i < soul_level.length;i++){
             soul_level[i] = 1;
         }
-        soul_level[26] = 9;
+        soul_level[28] = 9;
         total_max_points = 37;
         talentC();
     });
