@@ -1,0 +1,385 @@
+.aod-talent-tree-space {
+    padding-bottom: 111.111111111%;
+    position: relative;
+}
+
+.aod-talent-tree-grid {
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1600px;
+    height: 550px;
+    background-image: url("../../resources/img/background.jfif");
+    background-repeat: no-repeat;
+    border: #A1A6A4 solid 3px;
+}
+
+.aod-talent-tree {
+    position: relative;
+    user-select: none;
+    pointer-events: auto;
+    height: 1220px;
+}
+
+.aod-talent-tree-talent {
+    /*filter: grayscale(100%); Apply this if decided to gray images not statted*/
+    position: relative;
+    z-index: 20;
+    width: 64px;
+    height: 64px;
+}
+
+.aod-talent-tree-talent-boundary, .aod-talent-tree-talent-inner, .aod-talent-tree-talent-inner-background {
+    box-sizing: border-box;
+    inset: 0;
+    position: absolute;
+}
+
+.aod-talent-tree-talent-inner {
+    inset: 10%;
+    overflow: hidden;
+}
+
+.aod-talent-tree-talent-inner-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+}
+
+.aod-talent-tree-talent[data-available] {
+    cursor: pointer;
+    filter: none;
+}
+
+.wrapper {
+    position: absolute;
+    top: 93px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.aod-talent-tree-talent-boundary, .aod-talent-tree-talent-inner, .aod-talent-tree-talent-inner-background {
+    box-sizing: border-box;
+    inset: 0;
+    position: absolute;
+}
+
+.aod-talent-tree [data-row="1"] {
+    grid-row: 1;
+}
+
+.aod-talent-tree [data-row="2"] {
+	grid-row: 2;
+}
+
+.aod-talent-tree [data-row="3"] {
+	grid-row: 3;
+}
+
+.aod-talent-tree [data-row="4"] {
+	grid-row: 4;
+}
+
+.aod-talent-tree [data-row="5"] {
+	grid-row: 5;
+}
+
+.aod-talent-tree [data-row="6"] {
+	grid-row: 6;
+}
+
+
+.aod-talent-tree [data-column="1"] {
+	grid-column: 1 / 40;
+}
+.aod-talent-tree [data-column="2"] {
+    grid-column: 3 / 40;
+}
+
+.aod-talent-tree [data-column="3"] {
+	grid-column: 5 / 40;
+}
+
+.aod-talent-tree [data-column="4"] {
+    grid-column: 7 / 40;
+}
+
+.aod-talent-tree [data-column="5"] {
+    grid-column: 9 / 40;
+}
+
+.aod-talent-tree [data-column="6"] {
+    grid-column: 11 / 40;
+}
+
+.aod-talent-tree [data-column="7"] {
+    grid-column: 13 / 40;
+}
+
+.aod-talent-tree [data-column="8"] {
+	grid-column: 15 / 40;
+}
+
+.aod-talent-tree [data-column="9"] {
+    grid-column: 17 / 40;
+}
+
+.aod-talent-tree [data-column="10"] {
+    grid-column: 19 / 40;
+}
+
+.aod-talent-tree [data-column="11"] {
+	grid-column: 21 / 40;
+}
+
+.aod-talent-tree [data-column="12"] {
+    grid-column: 23 / 40;
+}
+.aod-talent-tree [data-column="13"] {
+    grid-column: 25 / 40;
+}
+.aod-talent-tree [data-column="14"] {
+    grid-column: 27 / 40;
+}
+.aod-talent-tree [data-column="15"] {
+    grid-column: 29 / 40;
+}
+.aod-talent-tree [data-column="16"] {
+    grid-column: 31 / 40;
+}
+.aod-talent-tree [data-column="17"] {
+    grid-column: 33 / 40;
+}
+.aod-talent-tree [data-column="18"] {
+    grid-column: 35 / 40;
+}
+
+.aod-talent-tree-connection {
+    height: 12px;
+    margin-top: -6px;
+    position: absolute;
+    transform-origin: left center;
+}
+
+.aod-talent-tree-connection-line {
+    background-image: url(../../resources/img/talents-arrow-line-gray.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: 8px;
+    inset: 0;
+    position: absolute;
+}
+
+.color {
+    border: 3px black solid;
+}
+
+.tooltips-body {
+    position:absolute;
+    left: 8px;
+    top: 561px;
+    margin: 0;
+    height: 110px;
+    width: 250px;
+}
+p {
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    margin: 10px 0px 0px 10px;
+    border-radius: 6px;
+    border: #A1A6A4 solid 3px;
+    background-color: rgba(0,0,0,.8);
+    height: 130px;
+    width: 225px;
+}
+
+.overlay-long {
+    margin: 20px 20px 20px 25px;
+    border-radius: 6px;
+    border: #A1A6A4 solid 3px;
+    background-color: rgba(0,0,0,.8);
+    height: 110px;
+    width: 963px;
+}
+
+.overlay-points {
+    margin: 20px 20px 20px 25px;
+    border-radius: 6px;
+    border: #A1A6A4 solid 3px;
+    background-color: rgba(0,0,0,.8);
+    height: 110px;
+    width: 320px;
+    position: absolute;
+    top: 0px;
+    left: 983px;
+}
+.displayOverlay {
+    background-image: url("../../resources/img/background.jfif");
+    background-repeat: no-repeat;
+    position:absolute;
+    left: -253px;
+    border: #A1A6A4 solid 3px;
+    height: 505px;   
+    width: 1600px;
+    top: 150px;
+}
+.displayBox {
+    border-radius: 6px;
+    border: #A1A6A4 solid 3px;
+    background-color: rgba(0,0,0,.8);
+    height: 450px;
+    width: 1550px;
+    position: absolute;
+    top: 25px;
+    left: 25px;  
+}
+
+label{
+    color: white;
+}
+form {
+    margin-left: 12px;
+}
+.description-box {
+    background-image: url("../img/background.jpg");
+    position:absolute;
+    left: 8px;
+    top: 561px;
+    border: #A1A6A4 solid 3px;
+    height: 150px;
+    width: 250px;   
+}
+
+.checklist {
+    position:absolute;
+    left: 258px;
+    top: 561px;
+    border:  #A1A6A4 solid 3px;
+    height: 150px;
+    width: 1350px;
+    background-image: url("../img/background-long.jpg");
+}
+
+.col-2-check {
+    position: absolute;
+    top: 23px;
+    left: 190px;
+    height: 110px;
+}
+
+.col-3-check {
+    position: absolute;
+    top: 23px;
+    left: 340px;
+    height: 110px;
+}
+
+.col-4-check {
+    position: absolute;
+    top: 23px;
+    left: 490px;
+    height: 110px;
+}
+
+.col-5-check {
+    position: absolute;
+    top: 23px;
+    left: 670px;
+    height: 110px;
+}
+.col-6-check {
+    position: absolute;
+    top: 23px;
+    left: 875px;
+    height: 110px;
+}
+.aod-talent-tree-talent-points {
+    position: absolute;
+    color: white;
+    z-index: 100;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: rgba(0,0,0,.8);    
+}
+
+#talent-description {
+    display: none;
+}
+tr {
+    color: white;
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+td {
+    width: 50%;
+    text-align: left;
+    height: 1.2em;
+}
+thead tr th:first-child,
+tbody tr td:first-child {
+  width: 8%;
+  min-width: 8%;
+  max-width: 8%;
+  word-break: break-all;
+}
+.global-buttons{
+    position: absolute;
+    left: 400px;
+    top: 510px;
+    cursor: default;
+}
+.global-btn {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 2px white solid;
+    border-radius: 8px;
+    box-shadow: 0 2px white;
+    cursor: pointer;
+}
+.global-btn:active {
+    box-shadow: 0 0px white;
+    transform: translateY(2px);
+}
+#max-points {
+    margin-left: 15px;
+}
+#save {
+    margin-left: 15px;
+}
+#load {
+    margin-left: 15px;
+}
+#code {
+    margin-left: 15px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border: solid white 2px;
+    border-radius: 8px;
+    width: 450px;
+    position: absolute;
+    top: -17px;
+    box-shadow: 0 2px;
+}
+
+#code::placeholder {
+    color: white;
+}
