@@ -310,7 +310,7 @@ form {
     color: white;
     z-index: 100;
     border-radius: 6px;
-    font-size: 12px;
+    font-size: 20px;
     background-color: rgba(0,0,0,.8);    
 }
 
@@ -327,8 +327,8 @@ th {
 }
 td {
     width: 50%;
-    text-align: left;
-    height: 1.2em;
+    text-align: center;
+    height: 1.08em;
 }
 thead tr th:first-child,
 tbody tr td:first-child {
