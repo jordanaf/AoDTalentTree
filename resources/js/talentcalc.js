@@ -123,8 +123,8 @@ window.addEventListener('contextmenu', (ev) => {
         for (i=0;i < soul_level.length;i++){
             soul_level[i] = 1;
         }
-        soul_level[26] = 9;
-        total_max_points = 35;
+        soul_level[28] = 9;
+        total_max_points = 37;
         talentC();
     });
 
@@ -174,7 +174,7 @@ function talentC(){
 }
 
 function listQ(){
-    soul_level[26] = Number($(this).val());
+    soul_level[28] = Number($(this).val());
     talentC();
 }
 
